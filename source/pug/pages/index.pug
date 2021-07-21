@@ -1,73 +1,104 @@
 extends ../base/layout
 
 block variables
-  - var title = "Список страниц"
+  - var title = "Тестовое задание"
 
 block main
-  style.
-    .container {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    h1 {
-      font-size: 24px;
-      line-height: 28px;
-    }
-
-    a {
-      color: rgb(10, 10, 175);
-    }
-
-    li {
-      font-size: 18px;
-      line-height: 22px;
-      margin-bottom: 7px;
-    }
-
-    img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      display: block;
-      margin-bottom: 40px;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        padding-top: 20px;
-        padding-bottom: 20px;
-      }
-
-      ol {
-        padding-left: 20px;
-      }
-
-      ol li {
-        margin-bottom: 15px;
-      }
-    }
-
   -
-    var pages = [
+    var lists = [
       {
-        name: "UI-kit — ui-kit.html",
-        src: "ui-kit.html"
+        flat: "3-комнатная №104",
+        squares: "63,1",
+        floor: "1 ",
+        floors: "17",
+        price: "6 630 500"
       },
       {
-        name: "Главная — main.html",
-        src: "main.html"
+        flat: "3-комнатная №104",
+        squares: "63,1",
+        floor: "1 ",
+        floors: "17",
+        price: "6 630 500"
       },
       {
-        name: "Название страницы (состояние страницы, если отдельное) — ссылка на страницу",
-        src: "#"
+        flat: "3-комнатная №104",
+        squares: "63,1",
+        floor: "1 ",
+        floors: "17",
+        price: "6 630 500"
+      },
+      {
+        flat: "3-комнатная №104",
+        squares: "63,1",
+        floor: "1 ",
+        floors: "17",
+        price: "6 630 500"
+      },
+      {
+        flat: "3-комнатная №104",
+        squares: "63,1",
+        floor: "1 ",
+        floors: "17",
+        price: "6 630 500"
+      },
+      {
+        flat: "3-комнатная №104",
+        squares: "63,1",
+        floor: "1 ",
+        floors: "17",
+        price: "6 630 500"
       },
     ]
-
-  main.container.main-index
-    img(src="https://via.placeholder.com/300x150" width="300" alt="Логотип проекта")
-    h1 Список страниц
-    ol
-      each page in pages
-        li
-          a(href= page.src)= page.name
+  main.main.container
+    .lists
+      h1.lists__text Квартиры
+      .table
+        ul.table__header
+          li
+            p.table__col Планировка
+          li
+            p.table__col Квартира
+          li
+            button.table__col.table__btn(type="button") S, м²
+          li
+            button.table__col.table__btn(type="button") Этаж
+          li
+            button.table__col.table__btn.table__btn--up(type="button") Цена, ₽
+        ul.table__body
+          for list in lists
+            li.table__item
+              +icon("plan", 66, 63)
+              p.table__col #{list.flat}
+              p.table__col #{list.squares}
+              p.table__col #{list.floor}
+                span.table__col-span из #{list.floors}
+              p.table__col #{list.price}
+        button.table__load-btn(type="button") Загрузить еще
+    .form
+      form(action="#")
+        fieldset
+          input.visually-hidden#1k(type="checkbox", name="1k")
+          label(for="1k") 1к
+          input.visually-hidden#2k(type="checkbox", name="1k", checked)
+          label(for="2k") 2к
+          input.visually-hidden#3k(type="checkbox", name="1k")
+          label(for="3k") 3к
+          input.visually-hidden#4k(type="checkbox", name="1k", disabled)
+          label(for="4k") 4к
+        fieldset
+          h2 Стомость квартиры, ₽
+          label(for="price-flat1") от
+          input#price-flat1(type="number" min="0" max="36000000" value="5500000")
+          label(for="price-flat2") до
+          input#price-flat2(type="number" min="0" max="36000000" value="18900000")
+          div#form-slider1
+        fieldset
+          h2 Площадь, м²
+          label(for="squares-flat1") от
+          input#squares-flat1(type="number" min="0" max="250" value="33")
+          label(for="squares-flat2") до
+          input#squares-flat2(type="number" min="0" max="250" value="123")
+          div#form-slider2
+        button(type="button") Сбросить параметры
+  button.upbtn
+    .visually-hidden Прокрутить наверх страницы

@@ -1,0 +1,14 @@
+.upbtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $color-chinook;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../img/svg/up-arrow.svg');
+  border: none;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  cursor: pointer;
+}

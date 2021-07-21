@@ -2,6 +2,7 @@
 //---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/nouislider";
 // @import "vendor/swiper";
 
 // Global
@@ -17,10 +18,13 @@
 // Blocks
 //---------------------------------
 
-@import "blocks/header";
-@import "blocks/main-nav";
-@import "blocks/footer";
-@import "blocks/modal";
+@import "blocks/lists";
+@import "blocks/table";
+@import "blocks/form";
+@import "blocks/main";
+@import "blocks/nouirange";
+@import "blocks/upbtn";
+
 
 // Модуль для тестирования, не должен быть в финальной версии и версии для клиента
 @import "vendor/test";

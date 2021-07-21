@@ -1,21 +1,21 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2"),
-//     url("../fonts/rouble.woff") format("woff");
-// }
-
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "PT";
 
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+    url("../fonts/PT-Root-UI_Regular.woff2") format("woff2"),
+    url("../fonts/PT-Root-UI_Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "PT";
+
+  font-display: swap;
+  src:
+    url("../fonts/PT-Root-UI_Bold.woff2") format("woff2"),
+    url("../fonts/PT-Root-UI_Bold.woff") format("woff");
 }

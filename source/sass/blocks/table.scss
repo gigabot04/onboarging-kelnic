@@ -1,0 +1,112 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  max-width: 801px;
+}
+
+.table__header {
+  list-style: none;
+  grid-template-columns: 80px 281px 120px 120px 120px;
+  column-gap: 20px;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  margin-top: 48px;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba($color-default-black, 0.1);
+}
+
+.table__col {
+  border: none;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.table__col-span {
+  opacity: 0.5;
+}
+
+.table__btn {
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    transform: translateY(-50%);
+    right: -12px;
+    width: 7px;
+    height: 4px;
+    display: block;
+    background-image: url("../img/svg/arrow.svg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50%);
+    right: -11.5px;
+    width: 7px;
+    height: 4px;
+    display: block;
+    background-image: url("../img/svg/arrow.svg");
+    transform: rotate(180deg) translateY(-50%);
+  }
+
+  &:hover {
+    color: $color-medium-sea-green;
+  }
+
+  &--down {
+    &::before {
+      background-image: url("../img/svg/arrow-green.svg");
+    }
+  }
+
+  &--up {
+    &::after {
+      background-image: url("../img/svg/arrow-green.svg");
+    }
+  }
+}
+
+.table__body {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.table__item {
+  grid-template-columns: 80px 281px 120px 120px 120px;
+  column-gap: 20px;
+  display: grid;
+  padding: 16px 0 24px 0;
+  margin: 0;
+  align-items: start;
+  border-bottom: 1px solid rgba($color-default-black, 0.1);
+}
+
+.table__load-btn {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid rgba($color-midnight-express, 0.2);
+  border-radius: 25px;
+  background-color: transparent;
+  width: max-content;
+  padding: 8px 24px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid rgba($color-midnight-express, 1);
+  }
+}

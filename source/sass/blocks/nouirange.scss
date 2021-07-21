@@ -1,0 +1,28 @@
+.noUi-target {
+  height: 3px;
+  border: none;
+  background-color: $color-mystic;
+  box-shadow: none;
+  border-radius: 1.5px;
+}
+
+.noUi-connect {
+  background-color: $color-medium-sea-green;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 14px;
+  height: 14px;
+  right: -6px;
+  top: -6px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  background-color: $color-medium-sea-green;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: none;
+  }
+}
