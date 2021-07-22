@@ -42,6 +42,10 @@
         color: $color-default-white;
       }
 
+      input:focus + label {
+        outline: 1px solid $color-default-black;
+      }
+
       input:disabled + label {
         color: rgba($color-default-black, 0.2);
         cursor: auto;

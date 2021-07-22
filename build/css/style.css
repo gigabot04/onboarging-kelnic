@@ -1214,6 +1214,10 @@ button,
   color: #ffffff;
 }
 
+.form form fieldset:nth-of-type(1) input:focus + label {
+  outline: 1px solid #000000;
+}
+
 .form form fieldset:nth-of-type(1) input:disabled + label {
   color: rgba(0, 0, 0, 0.2);
   cursor: auto;

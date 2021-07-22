@@ -34,6 +34,20 @@ const initRangeSlider = () => {
   const resetBtn = document.querySelector('.form button[type="reset"]');
   const inputCheckbox = document.querySelectorAll('.form input[type="checkbox"]');
 
+  priceNum1.addEventListener('change', () => {
+    slider.noUiSlider.set([priceNum1.value, priceNum2.value]);
+  });
+  priceNum2.addEventListener('change', () => {
+    slider.noUiSlider.set([priceNum1.value, priceNum2.value]);
+  });
+
+  squaresNum1.addEventListener('change', () => {
+    slider2.noUiSlider.set([squaresNum1.value, squaresNum2.value]);
+  });
+  squaresNum2.addEventListener('change', () => {
+    slider2.noUiSlider.set([squaresNum1.value, squaresNum2.value]);
+  });
+
   slider.noUiSlider.on('update', (values, handle) => {
     priceNums1[handle].value = Math.round(values[handle]);
   });
