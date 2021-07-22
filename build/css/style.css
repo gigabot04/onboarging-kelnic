@@ -1071,6 +1071,15 @@ button,
   margin: 0;
 }
 
+.table__body .table__col {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.table__mobile {
+  display: none;
+}
+
 .table__col-span {
   opacity: 0.5;
 }
@@ -1302,6 +1311,9 @@ button,
   -webkit-column-gap: 80px;
   -moz-column-gap: 80px;
   column-gap: 80px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .noUi-target {
@@ -1348,6 +1360,10 @@ button,
   bottom: 32px;
   right: 32px;
   cursor: pointer;
+}
+
+.upbtn--disabled {
+  display: none;
 }
 
 /* v 0.0.1 */
@@ -1431,6 +1447,80 @@ button,
     color: red;
   }
 } */
+
+@media (max-width: 1439px) {
+  .table__header {
+    -ms-grid-columns: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+    -ms-grid-columns: max-content max-content max-content max-content;
+    grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+    grid-template-columns: max-content max-content max-content max-content;
+    border-bottom: none;
+  }
+
+  .table__body .table__col {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .table__desk {
+    display: none;
+  }
+
+  .table__mobile {
+    display: inline;
+  }
+
+  .table__item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px 24px;
+    -ms-grid-columns: 43px 75px 78px 1fr;
+    grid-template-columns: 43px 75px 78px 1fr;
+    margin-bottom: 4px;
+  }
+
+  .table__icon {
+    grid-column: -1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/ span 2;
+  }
+
+  .table__flat {
+    grid-column: 1/-1;
+  }
+
+  .table__load-btn {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .form {
+    min-width: 318px;
+    padding: 20px 19px;
+  }
+
+  .form form fieldset:nth-of-type(2) h2 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .form form fieldset:nth-of-type(2) label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .form form fieldset:nth-of-type(2) input {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .main {
+    -webkit-column-gap: 24px;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
+  }
+}
 
 @media (max-width: 1023px) {
   .container {

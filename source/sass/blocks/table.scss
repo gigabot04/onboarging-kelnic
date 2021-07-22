@@ -15,6 +15,11 @@
   align-items: center;
   padding-bottom: 16px;
   border-bottom: 1px solid rgba($color-default-black, 0.1);
+
+  @include vp--1439 {
+    grid-template-columns: max-content max-content max-content max-content;
+    border-bottom: none;
+  }
 }
 
 .table__col {
@@ -26,6 +31,30 @@
   line-height: 20px;
   padding: 0;
   margin: 0;
+}
+
+.table__body .table__col {
+  font-size: 16px;
+  line-height: 24px;
+
+  @include vp--1439 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.table__desk {
+  @include vp--1439 {
+    display: none;
+  }
+}
+
+.table__mobile {
+  display: none;
+
+  @include vp--1439 {
+    display: inline;
+  }
 }
 
 .table__col-span {
@@ -92,6 +121,27 @@
   margin: 0;
   align-items: start;
   border-bottom: 1px solid rgba($color-default-black, 0.1);
+
+  @include vp--1439 {
+    border: 1px solid rgba($color-default-black, 0.1);
+    border-radius: 8px;
+    padding: 16px 24px;
+    grid-template-columns: 43px 75px 78px 1fr;
+    margin-bottom: 4px;
+  }
+}
+
+.table__icon {
+  @include vp--1439 {
+    grid-column: -1;
+    grid-row: 1/ span 2;
+  }
+}
+
+.table__flat {
+  @include vp--1439 {
+    grid-column: 1/-1;
+  }
 }
 
 .table__load-btn {
@@ -105,6 +155,11 @@
   width: max-content;
   padding: 8px 24px;
   cursor: pointer;
+
+  @include vp--1439 {
+    font-size: 15px;
+    line-height: 22px;
+  }
 
   &:hover {
     border: 1px solid rgba($color-midnight-express, 1);

@@ -5,6 +5,11 @@
   min-width: 399px;
   padding: 40px;
 
+  @include vp--1439 {
+    min-width: 318px;
+    padding: 20px 19px;
+  }
+
   #form-slider1 {
     margin-top: 6px;
   }
@@ -51,6 +56,11 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 20px;
+
+        @include vp--1439 {
+          font-size: 13px;
+          line-height: 18px;
+        }
       }
 
       label {
@@ -59,6 +69,11 @@
         font-size: 16px;
         line-height: 24px;
         opacity: 0.5;
+
+        @include vp--1439 {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
 
       input {
@@ -68,6 +83,11 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
+
+        @include vp--1439 {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
 

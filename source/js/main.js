@@ -4,7 +4,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 
 import {initModals} from './modules/modals/init-modals';
-import {initRangeSlider} from './modules/modals/init-range-slider';
+import {initRangeSlider} from './modules/init-range-slider';
+import {initScrollUp} from './modules/init-scroll-top';
 
 // //-- этот скрипт загружает модуль для тестирования, его не должно быть в финальном билде и на проде для клиента
 // import {testInstruments} from './vendor/testInstruments';
@@ -22,7 +23,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // https://github.com/fregante/object-fit-images
   // polyfillObjectFit();
 
+
   iosVhFix();
+  initScrollUp();
+
   // Modules
   // ---------------------------------
 

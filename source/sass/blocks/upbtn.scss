@@ -11,4 +11,8 @@
   bottom: 32px;
   right: 32px;
   cursor: pointer;
+
+  &--disabled {
+    display: none;
+  }
 }
