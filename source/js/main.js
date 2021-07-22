@@ -11,7 +11,7 @@ import {loadData} from './modules/init-add-list';
 
 
 // //-- этот скрипт загружает модуль для тестирования, его не должно быть в финальном билде и на проде для клиента
-import {testInstruments} from './vendor/testInstruments';
+// import {testInstruments} from './vendor/testInstruments';
 // //--
 
 // ---------------------------------
@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     sendReq().then((data) => loadData(data)).catch((err) => console.log(err));
-    testInstruments();
+    // testInstruments();
   });
 });
 

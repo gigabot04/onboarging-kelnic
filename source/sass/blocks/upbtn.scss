@@ -12,6 +12,14 @@
   right: 32px;
   cursor: pointer;
 
+  &:hover {
+    background-color: $color-medium-sea-green;
+  }
+
+  &:active {
+    background-color: rgba($color-medium-sea-green, 0.4);
+  }
+
   &--disabled {
     display: none;
   }

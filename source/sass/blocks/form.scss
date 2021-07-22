@@ -37,6 +37,15 @@
         line-height: 24px;
         margin-right: 16px;
         margin-bottom: 20px;
+
+        &:hover {
+          background-color: rgba($color-medium-sea-green, 0.8);
+          color: $color-default-white;
+        }
+        &:active {
+          background-color: rgba($color-medium-sea-green, 0.5);
+          color: $color-default-white;
+        }
       }
 
       input:checked + label {
@@ -52,6 +61,10 @@
       input:disabled + label {
         color: rgba($color-default-black, 0.2);
         cursor: auto;
+      }
+      input:disabled + label:hover {
+        background-color: $color-default-white;
+        color: rgba($color-default-black, 0.2);
       }
     }
 
@@ -129,6 +142,7 @@
 
     button {
       padding: 5px 16px;
+      padding-right: 24px;
       border: none;
       background-color: transparent;
       cursor: pointer;
@@ -137,12 +151,22 @@
       font-weight: normal;
       font-size: 14px;
       line-height: 20px;
+      border-radius: 20px;
+
+      &:hover {
+        border: 1px solid rgba($color-medium-sea-green, 0.8);
+        margin: -1px;
+      }
+
+      &:active {
+        transform: translateY(3px);
+      }
 
       &::after {
         content: "";
         position: absolute;
         top: 50%;
-        right: 0;
+        right: 8px;
         width: 9px;
         height: 9px;
         transform: translateY(-50%);
