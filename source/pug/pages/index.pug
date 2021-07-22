@@ -4,86 +4,6 @@ block variables
   - var title = "Тестовое задание"
 
 block main
-  -
-    var lists = [
-      {
-        flat: "3-комнатная №100",
-        squares: "63,1",
-        floor: "1 ",
-        floors: "17",
-        price: "6 630 500"
-      },
-      {
-        flat: "3-комнатная №101",
-        squares: "63,1",
-        floor: "1 ",
-        floors: "17",
-        price: "6 630 500"
-      },
-      {
-        flat: "3-комнатная №102",
-        squares: "63,1",
-        floor: "1 ",
-        floors: "17",
-        price: "6 630 500"
-      },
-      {
-        flat: "3-комнатная №103",
-        squares: "63,1",
-        floor: "1 ",
-        floors: "17",
-        price: "6 630 500"
-      },
-      {
-        flat: "3-комнатная №104",
-        squares: "63,1",
-        floor: "1 ",
-        floors: "17",
-        price: "6 630 500"
-      },
-      {
-        flat: "3-комнатная №105",
-        squares: "63,1",
-        floor: "1 ",
-        floors: "17",
-        price: "6 630 500"
-      },
-      {
-        flat: "3-комнатная №106",
-        squares: "63,1",
-        floor: "1 ",
-        floors: "17",
-        price: "6 630 500"
-      },
-      {
-        flat: "3-комнатная №107",
-        squares: "63,1",
-        floor: "1 ",
-        floors: "17",
-        price: "6 630 500"
-      },
-      {
-        flat: "3-комнатная №108",
-        squares: "63,1",
-        floor: "1 ",
-        floors: "17",
-        price: "6 630 500"
-      },
-      {
-        flat: "3-комнатная №109",
-        squares: "63,1",
-        floor: "1 ",
-        floors: "17",
-        price: "6 630 500"
-      },
-      {
-        flat: "3-комнатная №110",
-        squares: "63,1",
-        floor: "1 ",
-        floors: "17",
-        price: "6 630 500"
-      },
-    ]
   main.main.container
     .lists
       h1.lists__text Квартиры
@@ -97,26 +17,24 @@ block main
             button.table__col.table__btn(type="button") S, м²
           li
             button.table__col.table__btn(type="button") Этаж
-          li.table__mobile
-            button.table__col.table__btn(type="button") Сдача
           li
-            button.table__col.table__btn.table__btn--up(type="button") Цена, ₽
+            button.table__col.table__btn(type="button") Цена, ₽
         ul.table__body
-          for list in lists
+          template#table__item
             li.table__item
               +icon("plan", 66, 63).table__icon
-              p.table__col.table__flat #{list.flat}
-              p.table__col #{list.squares}
-              p.table__col #{list.floor}
-                span.table__col-span из #{list.floors}
-              p.table__col #{list.price}
+              p.table__col.table__flat
+              p.table__col.table__squares
+              p.table__col.table__floor
+                span.table__col-span.table__floors из
+              p.table__col.table__price
         button.table__load-btn(type="button") Загрузить еще
     .form
       form(action="#")
         fieldset
           input.visually-hidden#1k(type="checkbox", name="1k")
           label(for="1k") 1к
-          input.visually-hidden#2k(type="checkbox", name="1k", checked)
+          input.visually-hidden#2k(type="checkbox", name="1k")
           label(for="2k") 2к
           input.visually-hidden#3k(type="checkbox", name="1k")
           label(for="3k") 3к
@@ -138,4 +56,4 @@ block main
           div#form-slider2
         button(type="reset") Сбросить параметры
   button.upbtn
-    .visually-hidden Прокрутить наверх страницы
+    span.visually-hidden Прокрутить наверх страницы

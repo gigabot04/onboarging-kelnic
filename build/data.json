@@ -1,0 +1,79 @@
+[
+  {
+    "flat": "3-комнатная №100",
+    "squares": 1,
+    "floor": 1,
+    "floors": "17",
+    "price": 1
+  },
+  {
+    "flat": "3-комнатная №101",
+    "squares": 2,
+    "floor": 2,
+    "floors": "17",
+    "price": 2
+  },
+  {
+    "flat": "3-комнатная №102",
+    "squares": 3,
+    "floor": 3,
+    "floors": "17",
+    "price": 3
+  },
+  {
+    "flat": "3-комнатная №103",
+    "squares": 4,
+    "floor": 4,
+    "floors": "17",
+    "price": 4
+  },
+  {
+    "flat": "3-комнатная №104",
+    "squares": 5,
+    "floor": 5,
+    "floors": "17",
+    "price": 5
+  },
+  {
+    "flat": "3-комнатная №105",
+    "squares": 6,
+    "floor": 6,
+    "floors": "17",
+    "price": 6
+  },
+  {
+    "flat": "3-комнатная №106",
+    "squares": 7,
+    "floor": 7,
+    "floors": "17",
+    "price": 7
+  },
+  {
+    "flat": "3-комнатная №107",
+    "squares": 8,
+    "floor": 8,
+    "floors": "17",
+    "price": 8
+  },
+  {
+    "flat": "3-комнатная №108",
+    "squares": 9,
+    "floor": 9,
+    "floors": "17",
+    "price": 9
+  },
+  {
+    "flat": "3-комнатная №109",
+    "squares": 10,
+    "floor": 10,
+    "floors": "17",
+    "price": 10
+  },
+  {
+    "flat": "3-комнатная №110",
+    "squares": 11,
+    "floor": 11,
+    "floors": "17",
+    "price": 11
+  }
+]

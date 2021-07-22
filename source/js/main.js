@@ -6,13 +6,17 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initRangeSlider} from './modules/init-range-slider';
 import {initScrollUp} from './modules/init-scroll-top';
+import {sendReq} from './modules/init-backend';
+import {loadData} from './modules/init-add-list';
+
 
 // //-- этот скрипт загружает модуль для тестирования, его не должно быть в финальном билде и на проде для клиента
-// import {testInstruments} from './vendor/testInstruments';
+import {testInstruments} from './vendor/testInstruments';
 // //--
 
 // ---------------------------------
 initRangeSlider();
+
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
@@ -22,7 +26,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ieFix();
   // https://github.com/fregante/object-fit-images
   // polyfillObjectFit();
-
 
   iosVhFix();
   initScrollUp();
@@ -34,7 +37,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    // testInstruments();
+    sendReq().then((data) => loadData(data)).catch((err) => console.log(err));
+    testInstruments();
   });
 });
 

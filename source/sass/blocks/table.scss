@@ -17,7 +17,7 @@
   border-bottom: 1px solid rgba($color-default-black, 0.1);
 
   @include vp--1439 {
-    grid-template-columns: max-content max-content max-content max-content;
+    grid-template-columns: max-content max-content max-content;
     border-bottom: none;
   }
 }
@@ -121,6 +121,10 @@
   margin: 0;
   align-items: start;
   border-bottom: 1px solid rgba($color-default-black, 0.1);
+
+  &--hidden {
+    display: none;
+  }
 
   @include vp--1439 {
     border: 1px solid rgba($color-default-black, 0.1);

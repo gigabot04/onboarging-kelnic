@@ -1150,6 +1150,10 @@ button,
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.table__item--hidden {
+  display: none;
+}
+
 .table__load-btn {
   font-style: normal;
   font-weight: normal;
@@ -1189,6 +1193,7 @@ button,
 
 .form form fieldset:nth-of-type(1) {
   border: none;
+  padding: 0;
 }
 
 .form form fieldset:nth-of-type(1) label {
@@ -1205,6 +1210,7 @@ button,
   font-size: 16px;
   line-height: 24px;
   margin-right: 16px;
+  margin-bottom: 20px;
 }
 
 .form form fieldset:nth-of-type(1) input:checked + label {
@@ -1225,6 +1231,7 @@ button,
 
 .form form fieldset:nth-of-type(2) {
   border: none;
+  padding-top: 0;
 }
 
 .form form fieldset:nth-of-type(2) h2 {
@@ -1454,10 +1461,10 @@ button,
 
 @media (max-width: 1439px) {
   .table__header {
-    -ms-grid-columns: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
-    -ms-grid-columns: max-content max-content max-content max-content;
-    grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
-    grid-template-columns: max-content max-content max-content max-content;
+    -ms-grid-columns: -webkit-max-content -webkit-max-content -webkit-max-content;
+    -ms-grid-columns: max-content max-content max-content;
+    grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content;
+    grid-template-columns: max-content max-content max-content;
     border-bottom: none;
   }
 

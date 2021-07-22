@@ -191,113 +191,22 @@
               <li>
                 <button class="table__col table__btn" type="button">Этаж</button>
               </li>
-              <li class="table__mobile">
-                <button class="table__col table__btn" type="button">Сдача</button>
-              </li>
               <li>
-                <button class="table__col table__btn table__btn--up" type="button">Цена, ₽</button>
+                <button class="table__col table__btn" type="button">Цена, ₽</button>
               </li>
             </ul>
             <ul class="table__body">
-              <li class="table__item">
-                <svg class="table__icon" width="66" height="63" aria-hidden="true">
-                  <use xlink:href="#plan"></use>
-                </svg>
-                <p class="table__col table__flat">3-комнатная №100</p>
-                <p class="table__col">63,1</p>
-                <p class="table__col">1 <span class="table__col-span">из 17</span></p>
-                <p class="table__col">6 630 500</p>
-              </li>
-              <li class="table__item">
-                <svg class="table__icon" width="66" height="63" aria-hidden="true">
-                  <use xlink:href="#plan"></use>
-                </svg>
-                <p class="table__col table__flat">3-комнатная №101</p>
-                <p class="table__col">63,1</p>
-                <p class="table__col">1 <span class="table__col-span">из 17</span></p>
-                <p class="table__col">6 630 500</p>
-              </li>
-              <li class="table__item">
-                <svg class="table__icon" width="66" height="63" aria-hidden="true">
-                  <use xlink:href="#plan"></use>
-                </svg>
-                <p class="table__col table__flat">3-комнатная №102</p>
-                <p class="table__col">63,1</p>
-                <p class="table__col">1 <span class="table__col-span">из 17</span></p>
-                <p class="table__col">6 630 500</p>
-              </li>
-              <li class="table__item">
-                <svg class="table__icon" width="66" height="63" aria-hidden="true">
-                  <use xlink:href="#plan"></use>
-                </svg>
-                <p class="table__col table__flat">3-комнатная №103</p>
-                <p class="table__col">63,1</p>
-                <p class="table__col">1 <span class="table__col-span">из 17</span></p>
-                <p class="table__col">6 630 500</p>
-              </li>
-              <li class="table__item">
-                <svg class="table__icon" width="66" height="63" aria-hidden="true">
-                  <use xlink:href="#plan"></use>
-                </svg>
-                <p class="table__col table__flat">3-комнатная №104</p>
-                <p class="table__col">63,1</p>
-                <p class="table__col">1 <span class="table__col-span">из 17</span></p>
-                <p class="table__col">6 630 500</p>
-              </li>
-              <li class="table__item">
-                <svg class="table__icon" width="66" height="63" aria-hidden="true">
-                  <use xlink:href="#plan"></use>
-                </svg>
-                <p class="table__col table__flat">3-комнатная №105</p>
-                <p class="table__col">63,1</p>
-                <p class="table__col">1 <span class="table__col-span">из 17</span></p>
-                <p class="table__col">6 630 500</p>
-              </li>
-              <li class="table__item">
-                <svg class="table__icon" width="66" height="63" aria-hidden="true">
-                  <use xlink:href="#plan"></use>
-                </svg>
-                <p class="table__col table__flat">3-комнатная №106</p>
-                <p class="table__col">63,1</p>
-                <p class="table__col">1 <span class="table__col-span">из 17</span></p>
-                <p class="table__col">6 630 500</p>
-              </li>
-              <li class="table__item">
-                <svg class="table__icon" width="66" height="63" aria-hidden="true">
-                  <use xlink:href="#plan"></use>
-                </svg>
-                <p class="table__col table__flat">3-комнатная №107</p>
-                <p class="table__col">63,1</p>
-                <p class="table__col">1 <span class="table__col-span">из 17</span></p>
-                <p class="table__col">6 630 500</p>
-              </li>
-              <li class="table__item">
-                <svg class="table__icon" width="66" height="63" aria-hidden="true">
-                  <use xlink:href="#plan"></use>
-                </svg>
-                <p class="table__col table__flat">3-комнатная №108</p>
-                <p class="table__col">63,1</p>
-                <p class="table__col">1 <span class="table__col-span">из 17</span></p>
-                <p class="table__col">6 630 500</p>
-              </li>
-              <li class="table__item">
-                <svg class="table__icon" width="66" height="63" aria-hidden="true">
-                  <use xlink:href="#plan"></use>
-                </svg>
-                <p class="table__col table__flat">3-комнатная №109</p>
-                <p class="table__col">63,1</p>
-                <p class="table__col">1 <span class="table__col-span">из 17</span></p>
-                <p class="table__col">6 630 500</p>
-              </li>
-              <li class="table__item">
-                <svg class="table__icon" width="66" height="63" aria-hidden="true">
-                  <use xlink:href="#plan"></use>
-                </svg>
-                <p class="table__col table__flat">3-комнатная №110</p>
-                <p class="table__col">63,1</p>
-                <p class="table__col">1 <span class="table__col-span">из 17</span></p>
-                <p class="table__col">6 630 500</p>
-              </li>
+              <template id="table__item">
+                <li class="table__item">
+                  <svg class="table__icon" width="66" height="63" aria-hidden="true">
+                    <use xlink:href="#plan"></use>
+                  </svg>
+                  <p class="table__col table__flat"></p>
+                  <p class="table__col table__squares"></p>
+                  <p class="table__col table__floor"><span class="table__col-span table__floors">из</span></p>
+                  <p class="table__col table__price"></p>
+                </li>
+              </template>
             </ul>
             <button class="table__load-btn" type="button">Загрузить еще</button>
           </div>
@@ -307,7 +216,7 @@
             <fieldset>
               <input class="visually-hidden" id="1k" type="checkbox" name="1k">
               <label for="1k">1к</label>
-              <input class="visually-hidden" id="2k" type="checkbox" name="1k" checked>
+              <input class="visually-hidden" id="2k" type="checkbox" name="1k">
               <label for="2k">2к</label>
               <input class="visually-hidden" id="3k" type="checkbox" name="1k">
               <label for="3k">3к</label>
@@ -334,9 +243,7 @@
           </form>
         </div>
       </main>
-      <button class="upbtn">
-        <div class="visually-hidden">Прокрутить наверх страницы</div>
-      </button>
+      <button class="upbtn"><span class="visually-hidden">Прокрутить наверх страницы</span></button>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
