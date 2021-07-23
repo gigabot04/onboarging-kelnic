@@ -1169,6 +1169,10 @@ button,
   cursor: pointer;
 }
 
+.table__load-btn--disabled {
+  display: none;
+}
+
 .table__load-btn:hover {
   border: 1px solid #0b1739;
 }

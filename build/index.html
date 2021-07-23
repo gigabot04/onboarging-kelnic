@@ -212,7 +212,7 @@
           </div>
         </div>
         <div class="form">
-          <form action="https://21.javascript.pages.academy/kekstagram" method="get">
+          <form action="#" method="get">
             <fieldset>
               <input class="visually-hidden" id="1k" type="checkbox" name="1k" onclick="submit();">
               <label for="1k">1к</label>
@@ -226,17 +226,17 @@
             <fieldset>
               <h2>Стомость квартиры, ₽</h2>
               <label for="price-flat1">от</label>
-              <input id="price-flat1" type="number" min="0" max="36000000" value="5500000" name="price-flat1" onclick="submit();">
+              <input id="price-flat1" type="number" min="0" max="36000000" value="5500000" name="price-flat1" onblur="submit();">
               <label for="price-flat2">до</label>
-              <input id="price-flat2" type="number" min="0" max="36000000" value="18900000" name="price-flat2" onclick="submit();">
+              <input id="price-flat2" type="number" min="0" max="36000000" value="18900000" name="price-flat2" onblur="submit();">
               <div id="form-slider1"></div>
             </fieldset>
             <fieldset>
               <h2>Площадь, м²</h2>
               <label for="squares-flat1">от</label>
-              <input id="squares-flat1" type="number" min="0" max="250" value="33" name="squares-flat1" onclick="submit();">
+              <input id="squares-flat1" type="number" min="0" max="250" value="33" name="squares-flat1" onblur="submit();">
               <label for="squares-flat2">до</label>
-              <input id="squares-flat2" type="number" min="0" max="250" value="123" name="squares-flat2" onclick="submit();">
+              <input id="squares-flat2" type="number" min="0" max="250" value="123" name="squares-flat2" onblur="submit();">
               <div id="form-slider2"></div>
             </fieldset>
             <button type="reset">Сбросить параметры</button>

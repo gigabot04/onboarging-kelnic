@@ -160,6 +160,10 @@
   padding: 8px 24px;
   cursor: pointer;
 
+  &--disabled {
+    display: none;
+  }
+
   @include vp--1439 {
     font-size: 15px;
     line-height: 22px;

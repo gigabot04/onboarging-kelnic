@@ -127,6 +127,9 @@ const loadComment = () => {
   let splice = hiddenList.splice(0, 5);
   sortList = sortList.concat(splice);
   tableBody.appendChild(add(splice));
+  if (hiddenList[0] === undefined) {
+    loadBtn.classList.add('table__load-btn--disabled');
+  }
 };
 
 loadBtn.addEventListener('click', () => {
