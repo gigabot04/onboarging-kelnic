@@ -32,27 +32,27 @@ block main
     .form
       form(action="https://21.javascript.pages.academy/kekstagram", method="get")
         fieldset
-          input.visually-hidden#1k(type="checkbox", name="1k", onblur="submit();")
+          input.visually-hidden#1k(type="checkbox", name="1k", onclick="submit();")
           label(for="1k") 1к
-          input.visually-hidden#2k(type="checkbox", name="2k", onblur="submit();")
+          input.visually-hidden#2k(type="checkbox", name="2k", onclick="submit();")
           label(for="2k") 2к
-          input.visually-hidden#3k(type="checkbox", name="3k", onblur="submit();")
+          input.visually-hidden#3k(type="checkbox", name="3k", onclick="submit();")
           label(for="3k") 3к
-          input.visually-hidden#4k(type="checkbox", name="4k", onblur="submit();", disabled)
+          input.visually-hidden#4k(type="checkbox", name="4k", onclick="submit();", disabled)
           label(for="4k") 4к
         fieldset
           h2 Стомость квартиры, ₽
           label(for="price-flat1") от
-          input#price-flat1(type="number", min="0", max="36000000", value="5500000", name="price-flat1", onblur="submit();")
+          input#price-flat1(type="number", min="0", max="36000000", value="5500000", name="price-flat1", onclick="submit();")
           label(for="price-flat2") до
-          input#price-flat2(type="number", min="0", max="36000000", value="18900000", name="price-flat2", onblur="submit();")
+          input#price-flat2(type="number", min="0", max="36000000", value="18900000", name="price-flat2", onclick="submit();")
           div#form-slider1
         fieldset
           h2 Площадь, м²
           label(for="squares-flat1") от
-          input#squares-flat1(type="number", min="0", max="250", value="33", name="squares-flat1", onblur="submit();")
+          input#squares-flat1(type="number", min="0", max="250", value="33", name="squares-flat1", onclick="submit();")
           label(for="squares-flat2") до
-          input#squares-flat2(type="number", min="0", max="250", value="123", name="squares-flat2", onblur="submit();")
+          input#squares-flat2(type="number", min="0", max="250", value="123", name="squares-flat2", onclick="submit();")
           div#form-slider2
         button(type="reset") Сбросить параметры
   button.upbtn(type="button")
