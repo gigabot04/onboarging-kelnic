@@ -30,30 +30,30 @@ block main
               p.table__col.table__price
         button.table__load-btn(type="button") Загрузить еще
     .form
-      form(action="#")
+      form(action="https://21.javascript.pages.academy/kekstagram", method="get")
         fieldset
-          input.visually-hidden#1k(type="checkbox", name="1k")
+          input.visually-hidden#1k(type="checkbox", name="1k", onblur="submit();")
           label(for="1k") 1к
-          input.visually-hidden#2k(type="checkbox", name="1k")
+          input.visually-hidden#2k(type="checkbox", name="2k", onblur="submit();")
           label(for="2k") 2к
-          input.visually-hidden#3k(type="checkbox", name="1k")
+          input.visually-hidden#3k(type="checkbox", name="3k", onblur="submit();")
           label(for="3k") 3к
-          input.visually-hidden#4k(type="checkbox", name="1k", disabled)
+          input.visually-hidden#4k(type="checkbox", name="4k", onblur="submit();", disabled)
           label(for="4k") 4к
         fieldset
           h2 Стомость квартиры, ₽
           label(for="price-flat1") от
-          input#price-flat1(type="number" min="0" max="36000000" value="5500000")
+          input#price-flat1(type="number", min="0", max="36000000", value="5500000", name="price-flat1", onblur="submit();")
           label(for="price-flat2") до
-          input#price-flat2(type="number" min="0" max="36000000" value="18900000")
+          input#price-flat2(type="number", min="0", max="36000000", value="18900000", name="price-flat2", onblur="submit();")
           div#form-slider1
         fieldset
           h2 Площадь, м²
           label(for="squares-flat1") от
-          input#squares-flat1(type="number" min="0" max="250" value="33")
+          input#squares-flat1(type="number", min="0", max="250", value="33", name="squares-flat1", onblur="submit();")
           label(for="squares-flat2") до
-          input#squares-flat2(type="number" min="0" max="250" value="123")
+          input#squares-flat2(type="number", min="0", max="250", value="123", name="squares-flat2", onblur="submit();")
           div#form-slider2
         button(type="reset") Сбросить параметры
-  button.upbtn
+  button.upbtn(type="button")
     span.visually-hidden Прокрутить наверх страницы

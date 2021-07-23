@@ -6,7 +6,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initRangeSlider} from './modules/init-range-slider';
 import {initScrollUp} from './modules/init-scroll-top';
-import {sendReq} from './modules/init-backend';
+import {sendReq} from './modules/init-sendReq';
 import {loadData} from './modules/init-add-list';
 
 
